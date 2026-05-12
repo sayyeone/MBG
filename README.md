@@ -1,2 +1,3 @@
 # MBG
-haloa yang
+
+tulis gimana hasil temuannya & stepnya nanti
