@@ -5,3 +5,6 @@ data/raw/test.csv
 .vscode
 notebooks/fold_1
 notebooks/fold_2
+notebooks/fold_3
+notebooks/fold_4
+notebooks/fold_5
