@@ -3,3 +3,5 @@ data/raw/test.csv
 data/raw/test.csv
 .venv
 .vscode
+notebooks/fold_1
+notebooks/fold_2
