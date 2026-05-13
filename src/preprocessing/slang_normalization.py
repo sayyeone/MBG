@@ -1,10 +1,15 @@
 import pandas as pd
+from pathlib import Path
+
+BASE_DIR = Path(__file__).resolve().parents[2]
+
+SLANG_PATH = BASE_DIR / "data" / "resources" / "slang_indo.csv"
 
 class SlangNormalizer:
     
     def __init__(
         self,
-        slang_path: str = "resources/slang_indo.csv"
+        slang_path: str = str(SLANG_PATH)
     ):
         
         self.slang_dict = self.load_slang_dictionary(slang_path)

@@ -1,6 +1,5 @@
 import re
 
-
 def remove_url(text: str) -> str:
     text = re.sub(r'http\S+|www\S+', '', text)
     return text

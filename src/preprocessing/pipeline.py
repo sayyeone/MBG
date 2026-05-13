@@ -15,15 +15,16 @@ class TextPreprocessor:
         use_slang_normalization: bool = True,
         use_stemming: bool = False,
         use_stopword_removal: bool = False,
+        remove_emoji: bool = True,
         
         # resources
-        slang_path: str = "resources/slang_indo.csv"
+        slang_path: str = "../data/resources/slang_indo.csv"
     ):
         
         self.use_slang_normalization = use_slang_normalization
         self.use_stemming = use_stemming
         self.use_stopword_removal = use_stopword_removal
-        
+        self.remove_emoji = remove_emoji
         
         # initialize slang normalizer
         if self.use_slang_normalization:
