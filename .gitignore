@@ -2,3 +2,4 @@ data/raw/sample_submission.csv
 data/raw/test.csv
 data/raw/test.csv
 .venv
+.vscode
