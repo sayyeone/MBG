@@ -33,6 +33,21 @@ def remove_rt_re(text: str) -> str:
     text = re.sub(r'\bre\b', '', text)
     return text
 
+def remove_emoji(text: str) -> str:
+    emoji_pattern = re.compile(
+        "["
+        "\U0001F600-\U0001F64F"  # emoticons
+        "\U0001F300-\U0001F5FF"  # symbols & pictographs
+        "\U0001F680-\U0001F6FF"  # transport & map
+        "\U0001F1E0-\U0001F1FF"  # flags
+        "\U00002702-\U000027B0"
+        "\U000024C2-\U0001F251"
+        "]+",
+        flags=re.UNICODE
+    )
+    
+    return emoji_pattern.sub(r'', text)
+
 
 def clean_text(text: str) -> str:
     # safety
@@ -58,5 +73,8 @@ def clean_text(text: str) -> str:
     
     # remove extra whitespace
     text = remove_extra_whitespace(text)
+    
+    # remove emoji
+    text = remove_emoji(text)
     
     return text
