@@ -8,3 +8,8 @@ notebooks/fold_2
 notebooks/fold_3
 notebooks/fold_4
 notebooks/fold_5
+models/indobertweet_fold_1
+models/indobertweet_fold_2
+models/indobertweet_fold_3
+models/indobertweet_fold_4
+models/indobertweet_fold_5
